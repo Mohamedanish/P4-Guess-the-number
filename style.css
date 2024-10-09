@@ -1,0 +1,92 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Include padding and border in element's total width and height */
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, antiquewhite, rgb(127, 169, 204));
+}
+
+/* Container styling */
+.container {
+    height: auto;  /* Auto height to fit content */
+    width: 90%;  /* Responsive width */
+    max-width: 400px;  /* Maximum width for larger screens */
+    border-radius: 5px;
+    padding: 20px;  /* More padding for better spacing */
+    background-color: antiquewhite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /* Improved shadow for better visibility */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading styling */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;  /* Slightly larger font size */
+    margin-bottom: 15px;  /* Space below heading */
+}
+
+/* Input styling */
+input {
+    width: 100%;  /* Full width */
+    padding: 10px;  /* Increased padding */
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    margin-bottom: 15px;  /* Space below input */
+}
+
+/* Button styling */
+button {
+    padding: 10px;  /* Increased padding for a larger button */
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-family: monospace;
+    font-weight: 900;
+    background-color: antiquewhite;
+    cursor: pointer;  /* Pointer cursor on hover */
+}
+
+/* Score display styling */
+#score {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    margin-top: 15px;  /* Space above score */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: rgb(74, 150, 221);
+}
+
+/* Input focus effect */
+input:focus {
+    background-color: rgb(138, 186, 231);
+    outline: none;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;  /* Slightly smaller on smaller screens */
+    }
+
+    button {
+        width: 100%;  /* Full width on mobile */
+    }
+
+    input {
+        font-size: 16px;  /* Slightly larger text for readability */
+    }
+}
